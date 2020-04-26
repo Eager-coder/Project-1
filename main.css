@@ -100,8 +100,8 @@
     transition: transform 0.5s;
 }
 .content-img:hover{
-   -webkit-transform: scale(110%);
-    transform: scale(110%);
+   -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .content-text h4{
