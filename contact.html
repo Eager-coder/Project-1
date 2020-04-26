@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ad26a0a7-52d6-4091-bfda-df5496d20df8&lang=en_US" type="text/javascript">
+    </script>
+    <script type="text/javascript">            
+        ymaps.ready(function(){
+            shymkent_map = new ymaps.Map("map", 
+                {
+                center: [42.357662, 69.637043],
+                zoom: 18
+                }
+            );
+            
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#"><span class="logo-name1">PRO</span><span class="logo-name2">DEV</span></a>
+            </div>
+            <div class="burger">
+                <img src="https://img.icons8.com/material-rounded/384/000000/menu.png"/>
+            </div>
+                <ul class="nav-links">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="dropdown-btn">
+                        <a href="#">Services<img src="https://img.icons8.com/ios-glyphs/24/000000/chevron-down.png"/></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links-responsive">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li class="dropdown-btn-mobile">
+                        <a href="#">Services<img id="chevron" src="https://img.icons8.com/ios-glyphs/24/000000/chevron-down.png"/></a>
+                        <ul class="dropdown-list-mobile">
+                            <li><a href="#">Service 1</a></li>
+                            <li><a href="#">Service 2 </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+        </div>
+    </header>
+    <section class="contact">
+        <h1 >Contact us</h1>
+        <div class="contact-container">
+            <div class="company-info">
+                <h2 class="comp-title">Company Information</h2>
+                <div class="info">
+                    <img src="" alt="" class="company-icon">
+                    <ul class="details">
+                        <li><span>Company Address</span></li>
+                        <li>Responsive Street 7</li>
+                        <li>London</li>
+                        <li>UK, Europe </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <img src="" alt="" class="company-icon">
+                    <ul class="details">
+                        <li><span>E-mail</span></li>
+                        <li>contact@sampledomain.com 7</li>
+                        <li> office@sampledomain.com </li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <img src="" alt="" class="company-icon">
+                    <ul class="details">
+                        <li><span>Phone Numbers</span></li>
+                        <li>0800 4521 800 50</li>
+                        <li>0450 5896 625 16</li>
+                        <li>0798 6546 465 15 </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="company-contact">
+                <h2 class="comp-title">Contact us</h2>
+                <input type="text" class="company-email" placeholder="Your email">
+                <input type="text" class="company-name" placeholder="Your name">
+                <input type="text" class="subject" placeholder="Subject">
+                <textarea name="message" id="message" cols="15" rows="2" placeholder="Your message"></textarea>
+            </div>
+            
+            
+        </div>
+    </section>
+    <section class="social-media">
+        <a href="https://www.facebook.com/"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png"/></a>
+        <a href="https://www.instagram.com/"><img src="https://img.icons8.com/ios-filled/50/000000/instagram.png"/></a>
+        <a href="https://www.twitter.com/"><img src="https://img.icons8.com/ios-filled/50/000000/twitter.png"/></a>
+        <a href="https://www.google-plus.com/"><img src="https://img.icons8.com/ios-filled/50/000000/google-plus.png"/></a>
+        <a href="https://www.youtube.com/"><img src="https://img.icons8.com/ios-filled/50/000000/youtube.png"/></a>
+        
+    </section>
+    <section id="map">
+
+    </section>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-flexbox">
+                <div class="footer-left">
+                    <span>Our philosophy</span>
+                    <p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt."</p>
+
+                    <span>about our company</span>
+                    <div class="footer-about">
+                        <img class="footer-about-img" src="https://images.unsplash.com/photo-1516483156299-a0ecd4226c08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="">
+                        
+                        <div class="footer-about-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat iste, eveniet veniam recusandae ut.</p>
+                            <a class="link" href="#">Read more <img class="footer-chevron"src="https://img.icons8.com/ios-glyphs/52/000000/chevron-right.png"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-mid">
+                    <span>countact us</span>
+                    <ul>
+                        <li>Adress: Responsive Street 7, London, UK</li>
+                        <li><a href="#">E-mail: contact@sampledomain.com</a></li>
+                        <li>Phone: 0700 000 987</li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <span>leave a message</span>
+                    <div class="email-name">
+                        <input type="text" class="email" placeholder="Your e-mail">
+                        <input type="text" class="name" placeholder="Your name">
+                    </div>
+                    <textarea rows="10" cols="30" class="message" placeholder="Your message"></textarea>
+                    <button class="submit-button">Submit</button>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom-items">
+                <ul class="bottom-links">
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy Center</a></li>
+                    <li><a href="#">Privacy Policy </a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">About Ads</a></li>
+                    <li><a href="#"> CA Privacy Disclosures</a></li>
+                </ul>
+                <div class="date"><span>© 2020 Turan Sultan</span></div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/86ec0857fc.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
