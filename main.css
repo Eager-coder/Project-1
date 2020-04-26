@@ -100,7 +100,7 @@
     transition: transform 0.5s;
 }
 .content-img:hover{
-   transform: scale(110%);
+   transform: scaleZ(110%);
 }
 
 .content-text h4{
